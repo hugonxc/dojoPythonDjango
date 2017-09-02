@@ -1,0 +1,22 @@
+<h1> Calculadora </h1>
+
+<form method="get">
+  Valor 1 : <input type="text" name="firstValue">
+  Valor 2 : <input type="text" name="secondValue">
+  <input type="submit">
+</form>
+
+<p>Resultado: {{ resultado }}</p>
+
+{% for v in vetor %}
+  <strong>value complete:</strong> {{ v }} <br>
+
+  <br><br>
+
+  {% if v >= 10 %}
+    <strong> {{ v }}</strong> >10 <br>
+  {% endif %}
+
+{% endfor %}
+
+huehueh br: {{ v }}

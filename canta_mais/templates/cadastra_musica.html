@@ -1,0 +1,22 @@
+<h1>Teste</h1>
+
+
+<form method="post">
+  {% csrf_token %}
+
+  Nome da musica: <input type="text" name="nome"> <br>
+  Nome do compositor: <input type="text" name="compositor"> <br>
+  Duração: <input type="text" name="duracao"> <br>
+  Quem sugeriu: <input  type="text"  name = "quemSugeriu">
+
+  <br>
+
+  <input type="submit">
+
+</form>
+
+
+{% for musica in musicas %}
+  nome: {{ musica.nome }}<br>
+  compositor: {{ musica.compositor }}<br>
+{% endfor %}
